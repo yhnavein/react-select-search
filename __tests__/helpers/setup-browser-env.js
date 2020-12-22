@@ -1,8 +1,8 @@
-import browserEnv from 'browser-env';
-browserEnv(['window', 'document', 'navigator']);
+import browserEnv from "browser-env";
+browserEnv(["window", "document", "navigator"]);
 
 global.requestAnimationFrame = (callback) => {
-    setTimeout(callback, 0);
+  setTimeout(callback, 0);
 };
 
 const scrollIntoViewMock = jest.fn();
